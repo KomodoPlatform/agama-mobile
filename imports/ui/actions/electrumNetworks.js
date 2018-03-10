@@ -30,6 +30,19 @@ networks.dogecoin = {
   dustThreshold: 0 // https://github.com/dogecoin/dogecoin/blob/v1.7.1/src/core.h#L155-L160
 };
 
+networks.dnr = {
+  messagePrefix: '\x19Denarius Signed Message:\n',
+  bip32: {
+    public: 0x0488b21e,
+    private: 0x0488ade4,
+  },
+  pubKeyHash: 0x1e,
+  scriptHash: 0x5a,
+  wif: 0x9e,
+  dustThreshold: 1000,
+  isPoS: true
+};
+
 // https://github.com/monacoinproject/monacoin/blob/master-0.10/src/chainparams.cpp#L161
 networks.monacoin = {
   messagePrefix: '\x19Monacoin Signed Message:\n',

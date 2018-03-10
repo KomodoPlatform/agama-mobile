@@ -180,6 +180,17 @@ export let electrumServers = {
       'electrum2.cipig.net:10001',
     ],
   },
+  dnr: { // !estimatefee
+    ip: '173.254.244.119',
+    port: 50001,
+    proto: 'tcp',
+    txfee: 10000,
+    abbr: 'DNR',
+    serverList: [
+      '173.254.244.119:50001',
+      '173.254.244.122:50001'
+    ],
+  },
   dogecoin: { // !estimatefee
     ip: '173.212.225.176',
     port: 50015,

@@ -19,7 +19,9 @@ export const isZcash = (network) => {
 
 export const isPos = (network) => {
   if (network === 'BLK' ||
-      network === 'blk') {
+      network === 'blk' ||
+      network === 'DNR' ||
+      network === 'dnr') {
     return true;
   }
 };
