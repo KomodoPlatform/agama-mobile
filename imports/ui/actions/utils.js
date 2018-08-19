@@ -189,6 +189,7 @@ export const coinsList = [
   'MNZ',
   'BNTN',
   'DOGE',
+  'DNR',
   'DGB',
   'BTG',
   'BLK',
@@ -224,6 +225,7 @@ export const explorers = {
   BOTS: 'http://BOTS.explorer.supernet.org',
   MGW: 'http://MGW.explorer.supernet.org',
   WLC: 'http://WIRELESS.explorer.supernet.org',
+  DNR: 'https://denariusexplorer.org',
   CHIPS: 'http://chips1.explorer.supernet.org',
   COQUI: 'https://explorer.coqui.cash',
   OOT: 'https://explorer.utrum.io',
@@ -235,11 +237,11 @@ export const convertURIToImageData = (URI) => {
     if (URI === null) {
       return reject();
     }
-    
+
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
     const image = new Image();
-    
+
     image.addEventListener('load', () => {
       canvas.width = image.width;
       canvas.height = image.height;
